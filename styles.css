@@ -1,0 +1,78 @@
+body {
+    margin: 0px; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.logo {
+    flex: 1; /* Takes up remaining space */
+}
+
+.small-logo {
+    width: 10%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-links li {
+    margin-right: 30px; /* Adjust spacing as needed */
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-links li :hover {
+    color:#C47451;
+    font-weight: bold;
+}
+
+
+.top-container {
+    position: relative;
+    height: 600px; /* Adjust the height as needed */
+    z-index: -1; /* Send the top-container to the background */
+}
+
+.top-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('https://images.unsplash.com/photo-1499540633125-484965b60031?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center top fixed;
+    background-size: cover;
+    background-position: center bottom;
+    z-index: -1; /* Place the background behind everything */
+}
+
+/* Styling for the square section */
+.square-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -12%; /* 75% down from the top-container */
+    background: transparent; /* To make the background of the squares transparent */
+}
+
+.square {
+    width: 20%;
+    height: 300px;
+    background-color:  #C47451;
+}
+
+.space {
+    width: 25px; /* Space between the squares */
+}
